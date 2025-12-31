@@ -48,9 +48,6 @@ Users can register, log in, browse games, filter them, search by teams, and mark
 - Database: Render PostgreSQL
 
 ---
-
-## 📁 Project Structure
-
 sports-casino-platform/
 ├── sports-casino-backend/
 │ ├── src/

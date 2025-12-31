@@ -1,14 +1,16 @@
+/* PAGE */
 .games-wrapper {
   min-height: 100vh;
-  background: #f3f4f6;
-  padding: 32px 12px;
+  background: #f2f3f7;
+  padding: 40px 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
 }
 
-/* Header */
+/* HEADER */
 .games-header {
-  background: linear-gradient(135deg, #7c83ff, #e879f9);
-  border-radius: 16px 16px 0 0;
-  padding: 16px 20px;
+  background: linear-gradient(135deg, #7b83ff, #e48df9);
+  border-radius: 18px 18px 0 0;
+  padding: 18px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,49 +20,53 @@
 .games-header h2 {
   margin: 0;
   font-size: 22px;
+  font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .logout-btn {
-  background: white;
+  background: rgba(255, 255, 255, 0.95);
   border: none;
   padding: 6px 14px;
   border-radius: 8px;
+  font-size: 14px;
   cursor: pointer;
 }
 
-/* Card */
+/* MAIN CARD */
 .games-card {
-  background: #fff;
-  border-radius: 0 0 16px 16px;
+  background: #ffffff;
+  border-radius: 0 0 18px 18px;
   padding: 24px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
 }
 
-/* Search */
+/* SEARCH */
 .search-box {
   width: 100%;
-  padding: 10px 14px;
+  height: 44px;
+  padding: 0 14px;
   border-radius: 10px;
-  border: 1px solid #ddd;
-  margin-bottom: 16px;
+  border: 1px solid #dcdde3;
+  font-size: 14px;
+  margin-bottom: 18px;
 }
 
-/* Filters */
+/* FILTER PILLS */
 .filters {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 12px;
+  gap: 10px;
+  margin-bottom: 14px;
 }
 
 .filter-btn {
-  padding: 6px 14px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  background: #fff;
+  padding: 6px 16px;
+  border-radius: 10px;
+  border: 1px solid #dcdde3;
+  background: #ffffff;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -70,51 +76,55 @@
   border-color: #3b82f6;
 }
 
+/* FAVORITES TOGGLE */
 .fav-toggle {
   margin-bottom: 20px;
-  padding: 6px 12px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  background: #fff;
+  padding: 6px 14px;
+  border-radius: 10px;
+  border: 1px solid #dcdde3;
+  background: #ffffff;
+  font-size: 14px;
   cursor: pointer;
 }
 
-/* Game item */
+/* GAME ROW */
 .game-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fafafa;
-  border-radius: 12px;
+  background: #f9fafb;
+  border-radius: 14px;
   padding: 14px 16px;
-  margin-bottom: 12px;
-  border: 1px solid #eee;
+  margin-bottom: 14px;
+  border: 1px solid #eceef3;
 }
 
 .game-left {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 }
 
 .game-icon {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .game-title {
+  font-size: 15px;
   font-weight: 600;
 }
 
 .game-sub {
   font-size: 13px;
-  color: #666;
+  color: #6b7280;
 }
 
 .fav-btn {
   padding: 6px 14px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #dcdde3;
+  background: #ffffff;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -124,10 +134,12 @@
   border-color: #3b82f6;
 }
 
-/* Pagination */
+/* PAGINATION */
 .pagination {
   display: flex;
   justify-content: center;
-  gap: 12px;
-  margin-top: 20px;
+  align-items: center;
+  gap: 14px;
+  margin-top: 26px;
+  font-size: 14px;
 }

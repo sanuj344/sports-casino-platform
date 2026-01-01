@@ -95,3 +95,106 @@ sports-casino-platform/
 `-- README.md
 </pre>
 
+
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### Clone the Repository
+```bash
+git clone <your-repository-url>
+cd sports-casino-platform
+
+
+Backend Setup
+cd sports-casino-backend
+npm install
+
+
+Create .env
+PORT=3000
+NODE_ENV=development
+DATABASE_URL=postgresql://USERNAME:PASSWORD@localhost:5432/sports_casino
+JWT_SECRET=your_jwt_secret
+JWT_EXPIRES_IN=1d
+
+
+Run migrations & seed data
+npx prisma migrate dev
+npx prisma db seed
+
+
+Start backend server
+node src/server.js
+Backend runs on:
+http://localhost:3000
+
+
+Frontend Setup
+cd ../sports-casino-frontend
+npm install
+Create .env
+VITE_API_BASE_URL=http://localhost:3000
+
+Start frontend
+npm run dev
+
+Frontend runs on:
+http://localhost:5173
+
+```
+## 🔌 API Endpoints
+
+### 🔐 Authentication
+| Method | Endpoint         | Description               |
+|-------:|------------------|---------------------------|
+| POST   | /auth/register   | Register a new user       |
+| POST   | /auth/login      | Login and receive JWT     |
+
+---
+
+### 🎮 Games
+| Method | Endpoint                | Description               |
+|-------:|-------------------------|---------------------------|
+| GET    | /games                  | Get all games             |
+| GET    | /games?sport=Cricket    | Filter games by sport     |
+
+---
+
+### ⭐ Favorites
+| Method | Endpoint                 | Description                  |
+|-------:|--------------------------|------------------------------|
+| GET    | /favorites               | Get user's favorite games   |
+| POST   | /favorites/:gameId       | Add game to favorites       |
+| DELETE | /favorites/:gameId       | Remove game from favorites  |
+
+
+🔐 Authentication Flow
+
+User logs in and receives a JWT
+
+JWT is stored in localStorage
+
+JWT is sent in Authorization header
+
+Backend validates JWT using middleware
+
+Unauthorized users are redirected to login
+
+📱 UI / UX Highlights
+
+Loading, error, and empty states handled
+
+Mobile-friendly responsive layout
+
+Modern card-based design
+
+Clean navigation with logout support
+
+📌 Author
+
+Sanuj
+
+
